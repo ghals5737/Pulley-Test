@@ -13,6 +13,8 @@ class ProblemEntity (
     var problemType: ProblemType,
     var level: Int,
     var answer: String,
+    val randId: Int,
 ){
+
 
 }
