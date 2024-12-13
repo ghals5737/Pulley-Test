@@ -1,4 +1,4 @@
-package org.example.pulleyapi.assignment.entity
+package org.example.pulleyapi.piece.entity
 
 import jakarta.persistence.*
 import org.example.pulleyapi.piece.entity.PieceEntity
@@ -8,7 +8,7 @@ import org.example.pulleyapi.student.entity.StudentEntity
 
 @Entity
 @Table(name = "answers")
-class Answer (
+class AnswerEntity (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,

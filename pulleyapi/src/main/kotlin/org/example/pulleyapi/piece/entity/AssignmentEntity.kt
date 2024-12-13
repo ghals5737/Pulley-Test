@@ -1,6 +1,7 @@
-package org.example.pulleyapi.assignment.entity
+package org.example.pulleyapi.piece.entity
 
 import jakarta.persistence.*
+import org.example.pulleyapi.piece.entity.PieceEntity
 import org.example.pulleyapi.student.entity.StudentEntity
 import org.example.pulleyapi.teacher.entity.TeacherEntity
 
@@ -18,5 +19,8 @@ class AssignmentEntity (
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "teacher_id", nullable = false)
     var teacher: TeacherEntity,
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "piece_id", nullable = false)
+    var piece: PieceEntity,
 ){
 }
