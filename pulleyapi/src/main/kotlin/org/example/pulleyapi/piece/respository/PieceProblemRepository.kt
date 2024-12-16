@@ -4,4 +4,5 @@ import org.example.pulleyapi.piece.entity.PieceProblemEntity
 import org.springframework.data.jpa.repository.JpaRepository
 
 interface PieceProblemRepository : JpaRepository<PieceProblemEntity, Long> {
+    fun findProblemsByPieceId(pieceId: Long): List<PieceProblemEntity>
 }

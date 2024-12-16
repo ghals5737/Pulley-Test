@@ -1,6 +1,6 @@
 package org.example.pulleyapi.piece.domain
 
-data class Answer(
+data class GradingResult (
     val problemId: Long,
-    val answer: String
+    val isCorrect: Boolean
 )

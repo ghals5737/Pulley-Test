@@ -16,4 +16,6 @@ interface AssignmentRepository : JpaRepository<AssignmentEntity,Long>{
         @Param("pieceId") pieceId: Long,
         @Param("studentIds") studentIds: List<Long>
     ): List<Long>
+
+    fun findByPieceIdAndStudentId(pieceId: Long, studentId: Long): AssignmentEntity
 }

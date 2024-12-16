@@ -398,4 +398,8 @@ INSERT INTO PROBLEMS (id, unit_code, level, problem_type, answer, rand_id) VALUE
 INSERT INTO PROBLEMS (id, unit_code, level, problem_type, answer, rand_id) VALUES (2098, 'uc1599', 5, 'SELECTION', 1, floor(rand() * 100000000));
 INSERT INTO PROBLEMS (id, unit_code, level, problem_type, answer, rand_id) VALUES (2099, 'uc1578', 5, 'SELECTION', 4, floor(rand() * 100000000));
 INSERT INTO PROBLEMS (id, unit_code, level, problem_type, answer, rand_id) VALUES (2100, 'uc1575', 5, 'SUBJECTIVE', 4, floor(rand() * 100000000));
-
+INSERT INTO teachers (id, name) VALUES (1, 'TeacherA');
+INSERT INTO teachers (id, name) VALUES (2, 'TeacherB');
+INSERT INTO students (id, name) VALUES (1, 'StudentA');
+INSERT INTO students (id, name) VALUES (2, 'StudentB');
+INSERT INTO students (id, name) VALUES (3, 'StudentC');

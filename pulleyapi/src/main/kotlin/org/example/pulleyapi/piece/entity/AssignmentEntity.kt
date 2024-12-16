@@ -23,4 +23,7 @@ class AssignmentEntity (
     @JoinColumn(name = "piece_id", nullable = false)
     var piece: PieceEntity,
 ){
+    fun updateIsCompleted(isCompleted: Boolean) {
+        this.isCompleted = isCompleted
+    }
 }

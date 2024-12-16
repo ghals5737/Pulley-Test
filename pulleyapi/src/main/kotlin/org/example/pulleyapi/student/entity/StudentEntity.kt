@@ -12,6 +12,6 @@ class StudentEntity(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
-    var name: String,
+    var name: String = "",
 ) {
 }

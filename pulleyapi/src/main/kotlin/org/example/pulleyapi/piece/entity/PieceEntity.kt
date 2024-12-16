@@ -10,9 +10,9 @@ class PieceEntity(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
     @Column(nullable = false)
-    var name: String,
+    var title: String = "",
     @ManyToOne
     @JoinColumn(name = "teacher_id")
-    var teacher: TeacherEntity,
+    var teacher: TeacherEntity = TeacherEntity(),
 ) {
 }
